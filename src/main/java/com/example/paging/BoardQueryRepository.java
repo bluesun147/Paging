@@ -32,6 +32,7 @@ import java.util.List;
     .fetch();
  */
 
+// paging1
 
 import static com.example.paging.entity.QBoard.board;
 import static com.example.paging.entity.QUser.user;
@@ -46,6 +47,7 @@ public class BoardQueryRepository {
         this.query = new JPAQueryFactory(em);
     }
 
+    // 반환타입 Page 인터페이스도 getTotalPages(), getTotalElements()와 같은 메소드 갖고있음.
     public Page<Board> getBoardList(Pageable pageable) {
         QueryResults<Board> results = query
                 .selectFrom(board)
