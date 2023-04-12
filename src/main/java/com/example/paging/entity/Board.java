@@ -26,7 +26,9 @@ public class Board {
     private LocalDateTime createTime;
 
     // ManyToOne 있는 쪽이 다.
-    @ManyToOne(fetch = FetchType.LAZY)
+    // api 실행 시 could not initialize proxy [com.example.paging.entity.User#1] - no Session
+    // 해당 오류 때문에 EAGER로 바꿈. LAZY에서 해결할 수 있는 방법 알아보자
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "userId")
     private User user;
 }
