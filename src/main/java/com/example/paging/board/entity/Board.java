@@ -1,5 +1,6 @@
-package com.example.paging.entity;
+package com.example.paging.board.entity;
 
+import com.example.paging.user.entity.User;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
-package com.example.paging;
+package com.example.paging.board.repository;
 
-import com.example.paging.entity.Board;
-import com.example.paging.entity.User;
+import com.example.paging.board.entity.Board;
+import com.example.paging.user.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
-package com.example.paging.dto;
+package com.example.paging.board.dto;
 
-import com.example.paging.entity.Board;
+import com.example.paging.board.entity.Board;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

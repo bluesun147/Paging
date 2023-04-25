@@ -1,7 +1,8 @@
-package com.example.paging;
+package com.example.paging.board.controller;
 
-import com.example.paging.dto.BoardDto;
-import com.example.paging.dto.BoardListDto;
+import com.example.paging.board.service.BoardService;
+import com.example.paging.board.dto.BoardDto;
+import com.example.paging.board.dto.BoardListDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

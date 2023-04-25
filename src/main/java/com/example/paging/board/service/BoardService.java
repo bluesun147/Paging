@@ -1,9 +1,12 @@
-package com.example.paging;
+package com.example.paging.board.service;
 
-import com.example.paging.dto.BoardDto;
-import com.example.paging.dto.BoardListDto;
-import com.example.paging.entity.Board;
-import com.example.paging.entity.User;
+import com.example.paging.user.entity.User;
+import com.example.paging.user.repository.UserRepository;
+import com.example.paging.board.repository.BoardQueryRepository;
+import com.example.paging.board.repository.BoardRepository;
+import com.example.paging.board.dto.BoardDto;
+import com.example.paging.board.dto.BoardListDto;
+import com.example.paging.board.entity.Board;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

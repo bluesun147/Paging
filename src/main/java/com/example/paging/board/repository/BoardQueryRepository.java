@@ -1,6 +1,6 @@
-package com.example.paging;
+package com.example.paging.board.repository;
 
-import com.example.paging.entity.Board;
+import com.example.paging.board.entity.Board;
 import com.querydsl.core.QueryResults;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.data.domain.Page;
@@ -34,8 +34,8 @@ import java.util.List;
 
 // paging1
 
-import static com.example.paging.entity.QBoard.board;
-import static com.example.paging.entity.QUser.user;
+import static com.example.paging.board.entity.QBoard.board;
+import static com.example.paging.user.entity.QUser.user;
 
 @Repository
 public class BoardQueryRepository {
