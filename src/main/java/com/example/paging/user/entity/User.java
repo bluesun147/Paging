@@ -1,5 +1,6 @@
-package com.example.paging.entity;
+package com.example.paging.user.entity;
 
+import com.example.paging.board.entity.Board;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,6 +30,9 @@ public class User {
 
     @Column(nullable = false, length = 50, name = "nickname")
     private String nickname;
+
+    @Column(nullable = false)
+    private Long age;
 
     // 만약 양방향 아니라면 OneToMany 없어도 됨.
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
